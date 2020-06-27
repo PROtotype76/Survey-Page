@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="demo.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <script
+      type="text/javascript"
+      src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"
+    ></script>
+    <h1 id="title">Global Music Survey</h1>
+    <p id="description">
+      <em> Thank you for taking the time to complete this survey</em>
+    </p>
+    <form id="survey-form" class="container">
+      <label for="name" id="name-label">Name:</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="pratik shetty"
+        required
+      /><br /><br />
+      <label for="email" id="email-label">Email:</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="pratikshetty@gmail.com"
+        required
+      /><br /><br />
+      <label for="age" id="number-label">Age:</label>
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="0"
+        max="150"
+        placeholder="25"
+        required
+      /><br /><br />
+      <label for="genres">Music Genres:</label>
+      <select name="genres" id="dropdown">
+        <option value="HipHop">HipHop</option>
+        <option value="Blues">Blues</option>
+        <option value="Rock">Rock</option>
+        <option value="Jazz">Jazz</option>
+        <option value="Pop">Pop</option>
+      </select>
+      <br /><br />
+      <label for="gender">Gender:</label>
+      <label><input type="radio" name="gender" value="male" />Male</label>
+      <label><input type="radio" name="gender" value="female" />Female</label>
+      <label><input type="radio" name="gender" value="other" />Other</label>
+      <br />
+      <p>Which platform do you use to listen to music?</p>
+      <label>
+        <input type="checkbox" name="choice" value="spotify" />Spotify
+      </label>
+      <label>
+        <input type="checkbox" name="choice" value="itunes" />Itunes
+      </label>
+      <label>
+        <input type="checkbox" name="choice" value="soundcloud" />Soundcloud
+      </label>
+      <label>
+        <input type="checkbox" name="choice" value="tidal" />Tidal
+      </label>
+      <label>
+        <input type="checkbox" name="choice" value="youtube" />Youtube
+      </label>
+      <br /><br />
+      <label for="comments">Comments:</label><br />
+      <textarea
+        id="comments"
+        name="comments"
+        placeholder="Enter your comments here...."
+        class="input-textarea"
+      ></textarea>
+      <br /><br />
+      <button type="submit" id="submit" class="submit-button">Submit</button>
+    </form>
+  </body>
+</html>
